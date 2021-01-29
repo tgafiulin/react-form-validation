@@ -53,6 +53,23 @@ a {
   text-align: left;
 }
 
+.form__block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 26px;
+  margin-bottom: 8px;
+
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FF7171;
+  }
+}
+
 .form__label {
   font-weight: 500;
   font-size: 16px;
@@ -67,7 +84,6 @@ a {
   box-sizing: border-box;
   box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
   border-radius: 6px;
-  margin-bottom: 33px;
   padding: 0 15px;
   height: 52px;
   box-sizing: border-box;
@@ -86,10 +102,6 @@ a {
 }
 
 .form__check {
-  margin-bottom: 38px;
-}
-
-.form__check {
   padding: 0;
   position: relative;
   padding-left: 36px;
@@ -98,11 +110,12 @@ a {
   font-size: 16px;
   line-height: 21px;
   color: #756F86;
+  cursor: pointer;
+  align-self: flex-start;
 
   input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
 
@@ -172,7 +185,7 @@ a {
   }
 }
 
-.btn--disabled {
+.btn[disabled] {
   background: #DBE2EA;
   box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
   color: #B1B5BF;
