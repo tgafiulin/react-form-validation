@@ -115,6 +115,7 @@ function App() {
           </div>
           <label htmlFor="language" className="form__label">Язык</label> 
           <input 
+              id="language"
               name="language"
               type="hidden"
               value={selectedLanguage}
